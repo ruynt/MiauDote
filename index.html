@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiauDote</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <a href="#inicio" class="logo">MiauDote</a>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#pets">Pets</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="tag">Adoção responsável</span>
+          <h1>Procura um novo melhor amigo?</h1>
+          <p>
+            Conheça animais disponíveis para adoção e encontre um companheiro
+            para transformar sua vida com carinho, cuidado e amizade.
+          </p>
+          <a href="#pets" class="btn">Ver pets disponíveis</a>
+        </div>
+
+        <div class="hero-image">
+          <div class="hero-shape hero-shape-1"></div>
+          <div class="hero-shape hero-shape-2"></div>
+          <img
+            src="./img/pets/pet-destaque.webp"
+            alt="Pet em destaque para adoção"
+            width="600"
+            height="400"
+            decoding="async"
+            fetchpriority="high"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="pets" class="pets section">
+      <div class="container">
+        <div class="section-top">
+          <span class="section-tag">Nossos pets</span>
+          <h2>Pets disponíveis para adoção</h2>
+          <p>
+            Veja alguns dos animais que estão esperando por um novo lar.
+          </p>
+        </div>
+
+        <div class="pets-grid">
+          <article class="pet-card">
+            <img
+              src="./img/pets/pet1.webp"
+              alt="Gato disponível para adoção"
+              width="450"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            >
+            <div class="pet-info">
+              <h3>Luna</h3>
+              <p>Idade: 1 ano</p>
+              <p>Porte: Pequeno</p>
+              <p>Localização: Salvador - BA</p>
+              <p>Status: Disponível</p>
+              <button>Tenho interesse</button>
+            </div>
+          </article>
+
+          <article class="pet-card">
+            <img
+              src="./img/pets/pet2.webp"
+              alt="Gato disponível para adoção"
+              width="450"
+              height="580"
+              loading="lazy"
+              decoding="async"
+            >
+            <div class="pet-info">
+              <h3>Formiguinha</h3>
+              <p>Idade: 3 anos</p>
+              <p>Porte: Pequeno</p>
+              <p>Localização: João Pessoa - PB</p>
+              <p>Status: Disponível</p>
+              <button>Tenho interesse</button>
+            </div>
+          </article>
+
+          <article class="pet-card">
+            <img
+              src="./img/pets/pet3.webp"
+              alt="Cachorro disponível para adoção"
+              width="600"
+              height="337"
+              loading="lazy"
+              decoding="async"
+            >
+            <div class="pet-info">
+              <h3>Luke</h3>
+              <p>Idade: 6 anos</p>
+              <p>Porte: Pequeno</p>
+              <p>Localização: Olinda - PE</p>
+              <p>Status: Disponível</p>
+              <button>Tenho interesse</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps section">
+      <div class="container">
+        <div class="section-top">
+          <span class="section-tag">Como funciona</span>
+          <h2>Adotar é simples</h2>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card">
+            <div class="step-number">01</div>
+            <h3>Escolha um pet</h3>
+            <p>Veja as informações dos animais disponíveis e encontre aquele que combina com você.</p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">02</div>
+            <h3>Entre em contato</h3>
+            <p>Preencha o formulário de interesse para iniciar o processo de adoção.</p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">03</div>
+            <h3>Ofereça um lar</h3>
+            <p>Após a análise, o pet poderá ganhar uma nova família cheia de amor.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="about section">
+      <div class="container about-content">
+        <div class="about-text">
+          <span class="section-tag">Sobre o projeto</span>
+          <h2>Conectando animais a novos lares</h2>
+          <p>
+            O MiauDote é uma plataforma desenvolvida para divulgar animais
+            disponíveis para adoção, facilitando o contato entre adotantes
+            e responsáveis.
+          </p>
+          <p>
+            O projeto prioriza uma interface simples, acessível e responsiva,
+            aplicando boas práticas de HTML5, CSS3 e Engenharia de Interface.
+          </p>
+        </div>
+
+        <div class="about-image">
+          <img
+            src="./img/pets/pet4.webp"
+            alt="Pessoa segurando um gato"
+            width="700"
+            height="466"
+            loading="lazy"
+            decoding="async"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contact section">
+      <div class="container contact-content">
+        <div class="contact-text">
+          <span class="section-tag">Contato</span>
+          <h2>Demonstrar interesse em adoção</h2>
+          <p>
+            Preencha os dados abaixo para entrar em contato e saber mais sobre o pet desejado.
+          </p>
+        </div>
+
+        <form class="contact-form">
+          <div class="input-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+          </div>
+
+          <div class="input-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+          </div>
+
+          <div class="input-group">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone">
+          </div>
+
+          <div class="input-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem"></textarea>
+          </div>
+
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 MiauDote. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="./js/script.js" defer></script>
+</body>
+</html>

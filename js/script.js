@@ -1,0 +1,1 @@
+console.log("MiauDote carregado com sucesso!");
