@@ -1,0 +1,72 @@
+/*
+Convenção adotada:
+- Tokens primitivos usam prefixo --_.
+- Representam valores-base do sistema visual.
+- Não devem ser consumidos diretamente pelos componentes.
+*/
+
+:root {
+  /* Paleta clara */
+  --_mint-100: #dff8f2;
+  --_mint-300: #67d5c0;
+  --_mint-400: #44bba4;
+
+  --_neutral-0: #ffffff;
+  --_neutral-50: #f7fbfa;
+  --_neutral-100: #eef7f5;
+  --_neutral-200: #e5e7eb;
+  --_neutral-500: #6b7280;
+  --_neutral-800: #1f2937;
+  --_neutral-900: #263238;
+
+  --_yellow-300: #ffd166;
+
+  /* Paleta escura */
+  --_dark-bg: #0f1720;
+  --_dark-surface: #16202b;
+  --_dark-surface-soft: #1d2a36;
+  --_dark-border: #2f3b47;
+  --_dark-text-primary: #f3f4f6;
+  --_dark-text-secondary: #c5ced6;
+
+  /* Efeitos */
+  --_shadow-soft: 0 12px 30px rgba(38, 50, 56, 0.08);
+  --_shadow-soft-dark: 0 12px 30px rgba(0, 0, 0, 0.35);
+  --_shadow-focus-ring: 0 0 0 4px rgba(103, 213, 192, 0.15);
+
+  /* Raios */
+  --_radius-sm: 12px;
+  --_radius-md: 20px;
+  --_radius-lg: 24px;
+  --_radius-xl: 30px;
+  --_radius-pill: 999px;
+  --_radius-round: 50%;
+  --_radius-input: 14px;
+
+  /* Motion */
+  --_duration-default: 0.3s;
+  --_easing-default: ease;
+  --_lift-sm: -2px;
+  --_lift-md: -8px;
+
+  /* Layout / camadas */
+  --_z-base: 1;
+  --_z-header: 1000;
+  --_sticky-top: 0;
+
+  /* Tamanhos base */
+  --_container-max: 1200px;
+  --_section-max: 700px;
+  --_text-max: 560px;
+  --_header-height: 80px;
+  --_hero-min-height: 420px;
+  --_hero-image-size: 380px;
+  --_hero-image-size-mobile: 300px;
+  --_hero-shape-lg: 320px;
+  --_hero-shape-lg-mobile: 240px;
+  --_hero-shape-sm: 110px;
+  --_hero-shape-sm-mobile: 80px;
+  --_card-image-height: 240px;
+  --_step-badge-size: 56px;
+  --_about-image-max-height: 450px;
+}

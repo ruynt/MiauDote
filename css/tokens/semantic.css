@@ -1,0 +1,86 @@
+/*
+Convenção adotada:
+- Tokens semânticos representam intenção de uso na interface.
+- Componentes devem consumir apenas tokens semânticos.
+- O tema escuro é ativado por [data-theme="dark"], sem duplicação de CSS de componentes.
+*/
+
+:root {
+  /* Superfícies */
+  --color-bg-page: var(--_neutral-50);
+  --color-surface: var(--_neutral-0);
+  --color-surface-soft: var(--_mint-100);
+  --color-border-default: var(--_neutral-200);
+
+  /* Texto */
+  --color-text-primary: var(--_neutral-900);
+  --color-text-secondary: var(--_neutral-500);
+
+  /* Marca / ação */
+  --color-brand: var(--_mint-300);
+  --color-brand-hover: var(--_mint-400);
+  --color-on-brand: var(--_neutral-0);
+
+  /* Destaque */
+  --color-accent: var(--_yellow-300);
+
+  /* Sombras */
+  --shadow-default: var(--_shadow-soft);
+  --shadow-focus: var(--_shadow-focus-ring);
+
+  /* Raios semânticos */
+  --radius-button: var(--_radius-pill);
+  --radius-card: var(--_radius-md);
+  --radius-control: var(--_radius-sm);
+  --radius-input: var(--_radius-input);
+  --radius-panel: var(--_radius-lg);
+  --radius-image: var(--_radius-xl);
+  --radius-round: var(--_radius-round);
+
+  /* Motion semântico */
+  --motion-duration-default: var(--_duration-default);
+  --motion-easing-default: var(--_easing-default);
+  --motion-lift-sm: var(--_lift-sm);
+  --motion-lift-md: var(--_lift-md);
+
+  /* Z-index / posição */
+  --z-surface: var(--_z-base);
+  --z-decoration: var(--_z-base);
+  --z-header: var(--_z-header);
+  --position-sticky-top: var(--_sticky-top);
+
+  /* Layout / tamanhos semânticos */
+  --layout-container-max: var(--_container-max);
+  --layout-section-max: var(--_section-max);
+  --layout-text-max: var(--_text-max);
+
+  --size-header-height: var(--_header-height);
+  --size-hero-min-height: var(--_hero-min-height);
+  --size-hero-image: var(--_hero-image-size);
+  --size-hero-image-mobile: var(--_hero-image-size-mobile);
+  --size-hero-shape-lg: var(--_hero-shape-lg);
+  --size-hero-shape-lg-mobile: var(--_hero-shape-lg-mobile);
+  --size-hero-shape-sm: var(--_hero-shape-sm);
+  --size-hero-shape-sm-mobile: var(--_hero-shape-sm-mobile);
+  --size-card-image-height: var(--_card-image-height);
+  --size-step-badge: var(--_step-badge-size);
+  --size-about-image-max-height: var(--_about-image-max-height);
+}
+
+[data-theme="dark"] {
+  --color-bg-page: var(--_dark-bg);
+  --color-surface: var(--_dark-surface);
+  --color-surface-soft: var(--_dark-surface-soft);
+  --color-border-default: var(--_dark-border);
+
+  --color-text-primary: var(--_dark-text-primary);
+  --color-text-secondary: var(--_dark-text-secondary);
+
+  --color-brand: var(--_mint-300);
+  --color-brand-hover: var(--_mint-400);
+  --color-on-brand: var(--_neutral-0);
+
+  --color-accent: var(--_yellow-300);
+
+  --shadow-default: var(--_shadow-soft-dark);
+}

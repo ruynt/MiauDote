@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MiauDote</title>
+  <meta name="description" content="Plataforma de adoção responsável para conectar pets a novos lares.">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -11,7 +12,7 @@
     <div class="container header-content">
       <a href="#inicio" class="logo">MiauDote</a>
 
-      <nav class="nav">
+      <nav class="nav" aria-label="Navegação principal">
         <ul class="nav-list">
           <li><a href="#inicio">Início</a></li>
           <li><a href="#pets">Pets</a></li>
@@ -19,6 +20,10 @@
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
+
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Alternar tema">
+        🌙
+      </button>
     </div>
   </header>
 
