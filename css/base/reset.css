@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: var(--font-family-base);
+    background: var(--color-bg-page);
+    color: var(--color-text-primary);
+    line-height: var(--line-height-base);
+    overflow-x: hidden;
+    transition: background-color var(--motion-duration-default) var(--motion-easing-default), color var(--motion-duration-default) var(--motion-easing-default);
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  button,
+  input,
+  textarea {
+    font: inherit;
+  }
+  
+  input,
+  textarea,
+  select {
+    font-size: max(16px, 1rem);
+  }

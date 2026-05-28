@@ -1,0 +1,93 @@
+.pet-card {
+    background: var(--color-surface);
+    border-radius: var(--radius-card);
+    overflow: hidden;
+    box-shadow: var(--shadow-default);
+    display: flex;
+    flex-direction: column;
+    transition: transform var(--motion-duration-default) ease, background-color var(--motion-duration-default) ease;
+  }
+  
+  @container (min-width: 400px) {
+    .pet-card {
+      flex-direction: row;
+      align-items: center;
+    }
+    .pet-card img {
+      width: 150px;
+      height: 100%;
+    }
+  }
+  
+  .pet-card:hover {
+    transform: translateY(var(--motion-lift-md));
+  }
+  
+  .pet-card img {
+    width: 100%;
+    height: var(--size-card-image-height);
+    object-fit: cover;
+  }
+  
+  .pet-info {
+    padding: var(--space-card-padding);
+  }
+  
+  .pet-info h3 {
+    font-size: var(--font-size-md);
+    margin-bottom: var(--space-3);
+  }
+  
+  .pet-info p {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-1);
+  }
+  
+  .pet-info button {
+    margin-top: var(--space-4);
+    width: 100%;
+    padding: var(--space-3);
+    border: none;
+    border-radius: var(--radius-control);
+    background: var(--color-brand);
+    color: var(--color-on-brand);
+    font-weight: var(--font-weight-semibold);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    cursor: pointer;
+    transition: background-color var(--motion-duration-default) var(--motion-easing-default), transform var(--motion-duration-default) var(--motion-easing-default);
+  }
+  
+  .pet-info button:hover {
+    background: var(--color-brand-hover);
+  }
+  
+  .step-card {
+    background: var(--color-bg-page);
+    border-radius: var(--radius-card);
+    padding: var(--space-7);
+    box-shadow: var(--shadow-default);
+  }
+  
+  .step-number {
+    width: var(--size-step-badge);
+    height: var(--size-step-badge);
+    border-radius: var(--radius-round);
+    background: var(--color-brand);
+    color: var(--color-on-brand);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--space-5);
+  }
+  
+  .step-card h3 {
+    margin-bottom: var(--space-3);
+  }
+  
+  .step-card p {
+    color: var(--color-text-secondary);
+  }
