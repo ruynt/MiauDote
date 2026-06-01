@@ -1,122 +1,150 @@
 *:focus-visible {
-    outline: 3px solid var(--color-brand);
-    outline-offset: 3px;
-    border-radius: 4px;
+  outline: 3px solid var(--color-brand);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (min-width: 1600px) {
+  html {
+    font-size: 112.5%;
   }
-  
-  @media (min-width: 1600px) {
-    html {
-      font-size: 112.5%;
-    }
+}
+
+@media (max-width: 992px) {
+  .about-content,
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
   }
-  
-  @media (max-width: 992px) {
-    .hero-content,
-    .about-content,
-    .contact-content {
-      grid-template-columns: 1fr;
-    }
-  
-    .hero-text {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .hero-text p {
-      margin: 0;
-    }
-  
-    .hero-image {
-      margin-top: var(--space-2);
-    }
-  
-    .pets-grid,
-    .steps-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  
-  @media (max-width: 768px) {
-    .container {
-      padding: 0 24px;
-    }
-  
-    .header-content {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      height: auto;
-      padding-top: 16px;
-      padding-bottom: 16px;
-      gap: 16px;
-    }
-  
-    .logo {
-      order: 1;
-    }
-  
-    .theme-toggle {
-      order: 2;
-    }
-  
-    .nav {
-      order: 3;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-    }
-  
-    .nav-list {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 8px;
-    }
-  
-    .nav-list a {
-      padding: 4px 8px;
-    }
-  
-    .hero-text {
-      max-width: 100%;
-    }
-  
-    .hero-text h1 {
-      font-size: clamp(1.75rem, 8vw, 2.2rem);
-      max-width: 100%;
-      overflow-wrap: break-word;
-    }
-  
-    .hero-text p {
-      max-width: 100%;
-      padding: 0;
-    }
-  
-    .section {
-      padding: var(--space-10) 0;
-    }
-  
-    .section-top h2,
-    .about-text h2,
-    .contact-text h2 {
-      font-size: var(--font-size-lg);
-    }
-  
-    .pets-grid,
-    .steps-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .hero-image img {
-      max-width: 100%;
-      height: auto;
-    }
-  
-    .hero-shape-1,
-    .hero-shape-2 {
-      display: none;
-    }
+
+  .hero-text {
+    display: contents;
   }
+
+  .hero-text .tag {
+    order: 1;
+  }
+
+  .hero-text h1 {
+    order: 2;
+  }
+
+  .hero-image {
+    order: 3;
+    margin: var(--space-4) 0;
+    min-height: auto;
+  }
+
+  .hero-text p {
+    order: 4;
+    margin: 0 0 var(--space-4) 0;
+  }
+
+  .hero-text .btn {
+    order: 5;
+  }
+
+  .pets-grid,
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  .header-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    gap: 16px;
+  }
+
+  .logo {
+    order: 1;
+  }
+
+  .theme-toggle {
+    order: 2;
+  }
+
+  .nav {
+    order: 3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .nav-list a {
+    padding: 4px 8px;
+  }
+
+  .hero {
+    padding: var(--space-10) 0;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(1.75rem, 8vw, 2.2rem);
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .section {
+    padding: var(--space-10) 0;
+  }
+
+  .section-top h2,
+  .about-text h2,
+  .contact-text h2 {
+    font-size: var(--font-size-lg);
+  }
+
+  .pets-grid,
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-shape-1 {
+    display: block;
+    width: 260px;
+    height: 260px;
+    top: 5%;
+    right: 0;
+  }
+
+  .hero-shape-2 {
+    display: block;
+    width: 80px;
+    height: 80px;
+    bottom: 5%;
+    left: 5%;
+  }
+}

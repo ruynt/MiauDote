@@ -1,20 +1,67 @@
 .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 44px;
-    min-width: 44px;
-    background: var(--color-brand);
-    color: var(--color-on-brand);
-    padding: var(--space-4) var(--space-7);
-    border-radius: var(--radius-button);
-    font-weight: var(--font-weight-semibold);
-    border: none;
-    cursor: pointer;
-    transition: background-color var(--motion-duration-default) var(--motion-easing-default), transform var(--motion-duration-default) var(--motion-easing-default), color var(--motion-duration-default) var(--motion-easing-default);
-  }
-  
-  .btn:hover {
-    background: var(--color-brand-hover);
-    transform: translateY(var(--motion-lift-sm));
-  }
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 44px;
+  background: var(--color-brand);
+  color: var(--color-on-brand);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-button);
+  font-weight: var(--font-weight-semibold);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color var(--motion-duration-default) var(--motion-easing-default), transform var(--motion-duration-default) var(--motion-easing-default), color var(--motion-duration-default) var(--motion-easing-default), border-color var(--motion-duration-default) var(--motion-easing-default), filter var(--motion-duration-default) var(--motion-easing-default);
+}
+
+.btn:hover {
+  background: var(--color-brand-hover);
+  transform: translateY(var(--motion-lift-sm));
+}
+
+.center-action {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-8);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-brand);
+  border: 2px solid var(--color-brand);
+}
+
+.btn-outline:hover {
+  background: var(--color-brand);
+  color: var(--color-on-brand);
+}
+
+.contact-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-4);
+  margin-top: var(--space-15); 
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: #ffffff;
+  gap: var(--space-2);
+}
+
+.btn-whatsapp:hover {
+  background: #128C7E;
+}
+
+.btn-instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #ffffff;
+  gap: var(--space-2);
+}
+
+.btn-instagram:hover {
+  filter: brightness(1.1);
+  transform: translateY(var(--motion-lift-sm));
+}

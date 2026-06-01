@@ -1,8 +1,9 @@
 /* ==========================================================================
-   MiauDote - Estilos Globais e Componentes
-   Autor: [Seu Nome/Seu Grupo]
-   Descrição: Arquitetura baseada em Cascade Layers (@layer) e tokens 
-   semânticos para garantir manutenibilidade e suporte nativo a Dark Mode.
+   MiauDote - Folha de Estilos Principal (Orquestrador)
+   Arquitetura: CSS Modular
+   Este arquivo não contém estilos diretos. Ele serve para organizar e 
+   importar os módulos menores e variáveis globais, facilitando a 
+   manutenção e evitando conflitos de especificidade.
    ========================================================================== */
 
    @layer tokens, reset, base, layout, components, overrides;
@@ -27,6 +28,7 @@
    @import url("./components/card.css") layer(components);
    @import url("./components/sections.css") layer(components);
    @import url("./components/forms.css") layer(components);
-   
+   @import url("./components/filters.css") layer(components);
+
    /* 5. Overrides */
    @import url("./overrides/mobile.css") layer(overrides);

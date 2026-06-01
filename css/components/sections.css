@@ -1,53 +1,60 @@
 .section-top {
-    text-align: center;
-    max-width: var(--layout-section-max);
-    margin: 0 auto var(--space-12);
-  }
-  
-  .section-top h2 {
-    font-size: var(--font-size-xl);
-    margin-bottom: var(--space-3);
-  }
-  
-  .section-top p {
-    color: var(--color-text-secondary);
-  }
-  
-  .section-tag,
-  .tag {
-    display: inline-block;
-    background: var(--color-surface-soft);
-    color: var(--color-brand-hover);
-    padding: var(--space-2) var(--space-4);
-    border-radius: var(--radius-button);
-    font-size: var(--font-size-xs);
-    font-weight: var(--font-weight-semibold);
-    margin-bottom: var(--space-4);
-  }
-  
-  .about-text h2 {
-    font-size: var(--font-size-xl);
-    margin-bottom: var(--space-4);
-  }
-  
-  .about-text p {
-    color: var(--color-text-secondary);
-    margin-bottom: var(--space-3);
-  }
-  
-  .about-image img {
-    border-radius: var(--radius-image);
-    box-shadow: var(--shadow-default);
-    width: 100%;
-    max-height: var(--size-about-image-max-height);
-    object-fit: cover;
-  }
-  
-  .contact-text h2 {
-    font-size: var(--font-size-xl);
-    margin-bottom: var(--space-3);
-  }
-  
-  .contact-text p {
-    color: var(--color-text-secondary);
-  }
+  text-align: center;
+  max-width: var(--layout-section-max);
+  margin: 0 auto var(--space-12);
+}
+
+.section-top h2 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-3);
+}
+
+.section-top p {
+  color: var(--color-text-secondary);
+}
+
+.section-tag,
+.tag {
+  display: inline-block;
+  background: var(--color-surface-soft);
+  color: var(--color-brand-hover);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-button);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-4);
+}
+
+.about-text h2 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-4);
+}
+
+.about-text p {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-3);
+}
+
+.about-image img {
+  border-radius: var(--radius-image);
+  box-shadow: var(--shadow-default);
+  width: 100%;
+  max-height: var(--size-about-image-max-height);
+  object-fit: cover;
+}
+
+.contact-text h2 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-3);
+}
+
+.contact-text p {
+  color: var(--color-text-secondary);
+}
+
+.pets-grid,
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-8);
+}

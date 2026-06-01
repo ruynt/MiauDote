@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Pets - MiauDote</title>
+  <meta name="description" content="Veja todos os cães e gatos disponíveis para adoção no MiauDote.">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho: Logo e Navegação Principal -->
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-brand)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1.1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z"></path>
+          <path d="M8 14v.5"></path>
+          <path d="M16 14v.5"></path>
+          <path d="M11.25 16.25h1.5L12 17l-.75-.75Z"></path>
+        </svg>
+        MiauDote
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="index.html#inicio">Início</a></li>
+          <li><a href="pets.html">Pets</a></li>
+          <li><a href="index.html#sobre">Sobre</a></li>
+          <li><a href="index.html#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Alternar tema">
+        🌙
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Seção Catálogo: Exposição dos animais e filtros -->
+    <section class="pets section">
+      <div class="container">
+        <div class="section-top">
+          <span class="section-tag">Catálogo completo</span>
+          <h2>Encontre seu novo amigo</h2>
+          <p>Utilize os filtros abaixo para buscar pelo pet ideal para sua casa.</p>
+        </div>
+
+        <!-- Barra de filtros: Lógica de seleção via JS -->
+        <div class="filters-bar">
+          <div class="filter-group">
+            <label for="filter-especie">Espécie:</label>
+            <select id="filter-especie" data-filter-group="especie">
+              <option value="todos">Todos</option>
+              <option value="gato">Gatos</option>
+              <option value="cachorro">Cachorros</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-porte">Porte:</label>
+            <select id="filter-porte" data-filter-group="porte">
+              <option value="todos">Todos</option>
+              <option value="pequeno">Pequeno</option>
+              <option value="medio">Médio</option>
+              <option value="grande">Grande</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Grid: Cards dos animais -->
+        <div class="pets-grid">
+          <!-- Card: Luna -->
+          <article class="pet-card" data-especie="gato" data-porte="pequeno">
+            <img src="./img/pets/luna.webp" alt="Gato disponível para adoção" width="450" height="600" loading="lazy" decoding="async">
+            <div class="pet-info">
+              <h3>Luna</h3>
+              <p>Idade: 1 ano</p>
+              <p>Porte: Pequeno</p>
+              <p>Localização: Salvador - BA</p>
+              <p>Status: Disponível</p>
+              <a href="https://wa.me/5583999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Luna." target="_blank" class="btn-adotar">Tenho interesse</a>
+            </div>
+          </article>
+
+          <!-- Card: Formiguinha -->
+          <article class="pet-card" data-especie="gato" data-porte="pequeno">
+            <img src="./img/pets/formiguinha.webp" alt="Gato disponível para adoção" width="450" height="580" loading="lazy" decoding="async">
+            <div class="pet-info">
+              <h3>Formiguinha</h3>
+              <p>Idade: 3 anos</p>
+              <p>Porte: Pequeno</p>
+              <p>Localização: João Pessoa - PB</p>
+              <p>Status: Disponível</p>
+              <a href="https://wa.me/5583999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Formiguinha." target="_blank" class="btn-adotar">Tenho interesse</a>
+            </div>
+          </article>
+
+          <!-- Card: Luke -->
+          <article class="pet-card" data-especie="cachorro" data-porte="pequeno">
+            <img src="./img/pets/luke.webp" alt="Cachorro disponível para adoção" width="600" height="337" loading="lazy" decoding="async">
+            <div class="pet-info">
+              <h3>Luke</h3>
+              <p>Idade: 6 anos</p>
+              <p>Porte: Pequeno</p>
+              <p>Localização: Olinda - PE</p>
+              <p>Status: Disponível</p>
+              <a href="https://wa.me/5583999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Luke." target="_blank" class="btn-adotar">Tenho interesse</a>
+            </div>
+          </article>
+
+          <!-- Card: Sonim -->
+          <article class="pet-card" data-especie="gato" data-porte="pequeno">
+            <img src="./img/pets/sonim.webp" alt="Cachorro disponível para adoção" width="600" height="400" loading="lazy" decoding="async">
+            <div class="pet-info">
+              <h3>Sonim</h3>
+              <p>Idade: 3 anos</p>
+              <p>Porte: Pequeno</p>
+              <p>Localização: João Pessoa - PB</p>
+              <p>Status: Disponível</p>
+              <a href="https://wa.me/5583999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Max." target="_blank" class="btn-adotar">Tenho interesse</a>
+            </div>
+          </article>
+
+          <!-- Card: Phoebe -->
+          <article class="pet-card" data-especie="cachorro" data-porte="medio">
+            <img src="./img/pets/phoebe.webp" alt="Foto do pet" width="450" height="600" loading="lazy" decoding="async">
+            <div class="pet-info">
+              <h3>Phoebe</h3>
+              <p>Idade: 5 anos</p>
+              <p>Porte: Médio</p>
+              <p>Localização: João Pessoa - PB</p>
+              <p>Status: Disponível</p>
+              <a href="https://wa.me/5583999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre..." target="_blank" class="btn-adotar">Tenho interesse</a>
+            </div>
+          </article>
+
+          <!-- Card: Ara -->
+          <article class="pet-card" data-especie="gato" data-porte="pequeno">
+            <img src="./img/pets/ara.webp" alt="Foto do pet" width="450" height="600" loading="lazy" decoding="async">
+            <div class="pet-info">
+              <h3>Ara</h3>
+              <p>Idade: 3 anos</p>
+              <p>Porte: Pequeno</p>
+              <p>Localização: João Pessoa - PB</p>
+              <p>Status: Disponível</p>
+              <a href="https://wa.me/5583999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre..." target="_blank" class="btn-adotar">Tenho interesse</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 MiauDote. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="./js/script.js" defer></script>
+</body>
+</html>
