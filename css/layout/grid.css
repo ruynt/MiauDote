@@ -26,11 +26,11 @@
     gap: var(--space-4);
   }
   
-  .hero {
+  .destaque {
     padding: var(--space-20) 0 var(--space-15);
   }
   
-  .hero-content {
+  .destaque-content {
     display: grid;
     grid-template-columns: 1.1fr 1fr;
     align-items: center;

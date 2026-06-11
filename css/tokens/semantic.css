@@ -55,13 +55,15 @@ Convenção adotada:
   --layout-text-max: var(--_text-max);
 
   --size-header-height: var(--_header-height);
-  --size-hero-min-height: var(--_hero-min-height);
-  --size-hero-image: var(--_hero-image-size);
-  --size-hero-image-mobile: var(--_hero-image-size-mobile);
-  --size-hero-shape-lg: var(--_hero-shape-lg);
-  --size-hero-shape-lg-mobile: var(--_hero-shape-lg-mobile);
-  --size-hero-shape-sm: var(--_hero-shape-sm);
-  --size-hero-shape-sm-mobile: var(--_hero-shape-sm-mobile);
+  
+  --size-destaque-min-height: var(--_destaque-min-height);
+  --size-destaque-image: var(--_destaque-image-size);
+  --size-destaque-image-mobile: var(--_destaque-image-size-mobile);
+  --size-destaque-shape-lg: var(--_destaque-shape-lg);
+  --size-destaque-shape-lg-mobile: var(--_destaque-shape-lg-mobile);
+  --size-destaque-shape-sm: var(--_destaque-shape-sm);
+  --size-destaque-shape-sm-mobile: var(--_destaque-shape-sm-mobile);
+  
   --size-card-image-height: var(--_card-image-height);
   --size-step-badge: var(--_step-badge-size);
   --size-about-image-max-height: var(--_about-image-max-height);

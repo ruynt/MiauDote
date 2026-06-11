@@ -54,18 +54,20 @@ Convenção adotada:
   --_z-header: 1000;
   --_sticky-top: 0;
 
-  /* Tamanhos base */
+  /* Tamanhos base (Atualizados para destaque) */
   --_container-max: 1200px;
   --_section-max: 700px;
   --_text-max: 560px;
   --_header-height: 80px;
-  --_hero-min-height: 420px;
-  --_hero-image-size: 380px;
-  --_hero-image-size-mobile: 300px;
-  --_hero-shape-lg: 320px;
-  --_hero-shape-lg-mobile: 240px;
-  --_hero-shape-sm: 110px;
-  --_hero-shape-sm-mobile: 80px;
+  
+  --_destaque-min-height: 420px;
+  --_destaque-image-size: 380px;
+  --_destaque-image-size-mobile: 300px;
+  --_destaque-shape-lg: 320px;
+  --_destaque-shape-lg-mobile: 240px;
+  --_destaque-shape-sm: 110px;
+  --_destaque-shape-sm-mobile: 80px;
+  
   --_card-image-height: 240px;
   --_step-badge-size: 56px;
   --_about-image-max-height: 450px;

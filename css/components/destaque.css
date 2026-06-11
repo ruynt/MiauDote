@@ -1,0 +1,56 @@
+.destaque-text h1 {
+  /* Atenção: mudei a variável abaixo para destaque também */
+  font-size: var(--font-size-destaque);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-5);
+}
+
+.destaque-text p {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  max-width: var(--layout-text-max);
+  margin-bottom: var(--space-7);
+}
+
+.destaque-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: var(--size-destaque-min-height);
+}
+
+.destaque-image img {
+  width: 100%;
+  max-width: var(--size-destaque-image);
+  height: var(--size-destaque-image);
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--radius-round);
+  position: relative;
+  z-index: var(--z-surface);
+  box-shadow: var(--shadow-default);
+}
+
+.destaque-shape {
+  position: absolute;
+  border-radius: var(--radius-round);
+  z-index: var(--z-decoration);
+}
+
+.destaque-shape-1 {
+  width: var(--size-destaque-shape-lg);
+  height: var(--size-destaque-shape-lg);
+  background: var(--color-surface-soft);
+  top: var(--space-5);
+  right: var(--space-8);
+}
+
+.destaque-shape-2 {
+  width: var(--size-destaque-shape-sm);
+  height: var(--size-destaque-shape-sm);
+  background: var(--color-accent);
+  bottom: var(--space-8);
+  left: var(--space-10);
+  opacity: 0.85;
+}

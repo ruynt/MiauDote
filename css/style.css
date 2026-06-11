@@ -24,7 +24,7 @@
    /* 4. Componentes */
    @import url("./components/btn.css") layer(components);
    @import url("./components/navbar.css") layer(components);
-   @import url("./components/hero.css") layer(components);
+   @import url("./components/destaque.css") layer(components);
    @import url("./components/card.css") layer(components);
    @import url("./components/sections.css") layer(components);
    @import url("./components/forms.css") layer(components);
